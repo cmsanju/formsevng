@@ -1,10 +1,21 @@
 import { Component } from '@angular/core';
-
+import{Router} from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'formsevng';
+  title = 'HOME PAGE';
+
+  msg = "WELCOME TO ANGUALR IMPLEMENTATION";
+
+  constructor(private router:Router)
+  {
+
+  }
+
+  newPage():void{
+    this.router.navigate(['/home-page']);
+  }
 }
