@@ -1,1 +1,18 @@
-<p>signuppage works!</p>
+<p>Student Data</p>
+
+<li *ngFor = "let data of sdata">
+    {{data.id}},{{data.name}}
+</li>
+
+<table width = "50%" border="1">
+        <tr>
+        <th>ID</th>
+        <th>NAME</th>
+    </tr>
+
+    <tr *ngFor = "let data1 of sdata">
+        <td>{{data1.id}}</td>
+        <td>{{data1.name}}</td>
+    </tr>
+
+</table>
